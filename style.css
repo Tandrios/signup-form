@@ -1,4 +1,164 @@
+:root {
+--khaki: #B5AF9Bff;
+--gunmetal: #1C2A2Dff;
+--battleship-gray: #929385ff;
+--cal-poly-green: #303C24ff;
+--moss-green: #958E62ff;
+}
+
+@font-face {
+    font-family: avigea;
+    src: url("Avigea.woff2");
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    display: flex;
+    background-color: var(--gunmetal);
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 1200px;
+}
+
+.logo {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.image {
+    flex: 1;
+    background: url("omer-haktan-bulut-WO36YaL85NQ-unsplash.jpg");
+    background-size: cover;
+    background-position: 50%;
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 15%;
+    top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo {
+    height: 75%;
+    width: 30%;
+    background: url("feet_4405612.png");
+    filter: invert(100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner-text {
+    color: white;
+    font-size: 3.5rem;
+    font-family: avigea;
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.text > * {
+    flex: 1;    
+}
+
+.header, .buttons {
+    background-color: rgb(236, 236, 236);
+}
+
+.header-text {
+    padding: 3rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+    justify-content: end;
+}
+
+.header-text span {
+    font-style: italic;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.31) 0px 5px 5px 0px;
+    z-index: 10;
+}
+.header-form {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    padding: 1.5rem 1rem 1rem 2rem;
+}
+
+.form {
+    margin-top: 1rem;
+}
+.form div {
+    display: flex;
+    justify-content: start;
+    margin-left: 3rem;
     
+}
+
+.form > div > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: max-content;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+input {
+    padding:5px 10px;
+    margin-top: 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    width: 15rem;
+    border: lightgray 1px solid;
+}
+
+.buttons button {
+    background-color: var(--battleship-gray);
+    font-size: 24px;
+    padding: 1rem 5rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.31) 0px 5px 5px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons p {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    margin: 2rem;
 }
